@@ -1,0 +1,56 @@
+### Create Room
+POST http://localhost:3000/rooms
+Content-Type: application/json
+
+{
+  "RoomNumber": "101",
+  "Type": "Standard",
+  "Capacity": 2,
+  "Status": "Available"
+}
+
+### Create Room 2
+POST http://localhost:3000/rooms
+Content-Type: application/json
+
+{
+  "RoomNumber": "102",
+  "Type": "Deluxe",
+  "Capacity": 3,
+  "Status": "Available"
+}
+
+### Create Room 3
+POST http://localhost:3000/rooms
+Content-Type: application/json
+
+{
+  "RoomNumber": "103",
+  "Type": "Suite",
+  "Capacity": 5,
+  "Status": "Occupied"
+}
+
+### Get All Rooms
+GET http://localhost:3000/rooms
+
+### Get Room by ID
+GET http://localhost:3000/rooms/1
+
+### Update Room
+PUT http://localhost:3000/rooms/1
+Content-Type: application/json
+
+{
+  "RoomNumber": "101",
+  "Type": "Standard",
+  "Capacity": 4,
+  "Status": "Occupied"
+}
+
+### Delete Room
+DELETE http://localhost:3000/rooms/3
+
+
+### GET Room no ID
+GET http://localhost:3000/rooms/4
